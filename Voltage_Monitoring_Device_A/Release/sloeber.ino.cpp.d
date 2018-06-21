@@ -11,11 +11,10 @@ sloeber.ino.cpp.o: ..\sloeber.ino.cpp \
  C:\Eclipse-neon\arduinoPlugin\packages\arduino\hardware\avr\1.6.20\cores\arduino/Arduino.h \
  C:\Eclipse-neon\arduinoPlugin\packages\arduino\hardware\avr\1.6.20\variants\eightanaloginputs/pins_arduino.h \
  C:\Eclipse-neon\arduinoPlugin\packages\arduino\hardware\avr\1.6.20\variants\eightanaloginputs/../standard/pins_arduino.h \
- ..\AnalogInput/AnalogInput.h \
+ ..\AnalogInput/AnalogMeasurement.h ..\AnalogInput/AnalogInput.h \
  ..\AnalogInput/../Commons/IPropertyListener.h \
  ..\AnalogInput/../Commons/Object.h ..\NotificationSystem.h \
- ..\AnalogInput/AnalogMeasurement.h ..\AnalogInput/AnalogInput.h \
- ..\SimpleExample.ino
+ ..\Commons/IPropertyListener.h ..\SimpleExample.ino
 
 C:\Eclipse-neon\arduinoPlugin\packages\arduino\hardware\avr\1.6.20\cores\arduino/Arduino.h:
 
@@ -41,6 +40,8 @@ C:\Eclipse-neon\arduinoPlugin\packages\arduino\hardware\avr\1.6.20\variants\eigh
 
 C:\Eclipse-neon\arduinoPlugin\packages\arduino\hardware\avr\1.6.20\variants\eightanaloginputs/../standard/pins_arduino.h:
 
+..\AnalogInput/AnalogMeasurement.h:
+
 ..\AnalogInput/AnalogInput.h:
 
 ..\AnalogInput/../Commons/IPropertyListener.h:
@@ -49,8 +50,6 @@ C:\Eclipse-neon\arduinoPlugin\packages\arduino\hardware\avr\1.6.20\variants\eigh
 
 ..\NotificationSystem.h:
 
-..\AnalogInput/AnalogMeasurement.h:
-
-..\AnalogInput/AnalogInput.h:
+..\Commons/IPropertyListener.h:
 
 ..\SimpleExample.ino:

@@ -10,7 +10,8 @@
 
 class IPropertyListener {
 public:
-	virtual ~IPropertyListener();
+	virtual IPropertyListener();
+	virtual ~IPropertyListener() = 0;
 
 	virtual void propertyChanged(void* source,
 			unsigned short propertyId, void* oldProperty) = 0;

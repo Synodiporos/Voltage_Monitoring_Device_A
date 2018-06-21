@@ -15,7 +15,8 @@ public:
 	AnalogMeasurement(uint8_t pinNumber);
 	AnalogMeasurement(uint8_t pinNumber, uint8_t spv);
 	AnalogMeasurement(uint8_t pinNumber, uint8_t spv, float coef);
-	AnalogMeasurement(uint8_t pinNumber, uint8_t spv, float coef, char* units);
+	AnalogMeasurement(uint8_t pinNumber, uint8_t spv,
+			float coef, char* units);
 	AnalogMeasurement(uint8_t pinNumber, uint8_t spv, float coef,
 			float offset, char* units);
 	virtual ~AnalogMeasurement();
@@ -27,11 +28,7 @@ public:
 	void setUnits(char* units);
 	char* getUnits();
 	float getMeasurement();
-	static int convert(float vref, float realMaxValue);
-
-protected:
-	void analogValueChanged(
-			unsigned short int analogValue, unsigned short int old);
+	static int coefficient(float realMaxValue);
 
 private:
 	float coef = 1;

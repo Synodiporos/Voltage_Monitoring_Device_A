@@ -70,3 +70,7 @@ float AnalogMeasurement::getMeasurement(){
 	return getAnalogValue()*coef - offset;
 }
 
+int coefficient(float realMaxValue){
+	return realMaxValue/1024;
+}
+

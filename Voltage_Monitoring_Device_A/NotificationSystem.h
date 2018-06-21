@@ -7,7 +7,7 @@
 
 #ifndef NOTIFICATIONSYSTEM_H_
 #define NOTIFICATIONSYSTEM_H_
-
+#include "Commons/IPropertyListener.h"
 #include "AnalogInput/AnalogMeasurement.h"
 
 class NotificationSystem : public IPropertyListener{
@@ -17,7 +17,6 @@ public:
 
 	void propertyChanged(void* source,
 				unsigned short propertyId, void* oldProperty);
-
 
 };
 

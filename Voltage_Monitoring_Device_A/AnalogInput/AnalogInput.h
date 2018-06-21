@@ -21,16 +21,16 @@ public:
 
 	void clearRecordsTable();
 	uint8_t getPinNumber();
-
+	unsigned short int getAnalogValue();
 	void setPropertyListener(IPropertyListener * l);
 	IPropertyListener* getPropertyListener();
 	void validate();
 
 protected:
-	unsigned short int getAnalogValue();
 	virtual void notifyPropertyChanged(unsigned long old);
 	virtual void analogValueChanged(
-				unsigned short int analogValue, unsigned short int old);
+				unsigned short int analogValue,
+				unsigned short int old);
 	unsigned short int _analogValue = 0;
 
 private:

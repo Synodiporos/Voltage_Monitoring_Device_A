@@ -12,7 +12,7 @@ NotificationSystem::NotificationSystem() {
 
 }
 
-NotificationSystem::~NotificationSystem() {
+NotificationSystem::~NotificationSystem(){
 	// TODO Auto-generated destructor stub
 }
 
@@ -21,7 +21,15 @@ void NotificationSystem::propertyChanged(void* source,
 
 	AnalogMeasurement am = *(AnalogMeasurement*)source;
 	uint8_t pin = am.getPinNumber();
-	Serial.print("Measurement of ");
+	int value = am.getAnalogValue();
+	float measure = am.getMeasurement();
+	char* units = am.getUnits();
+	Serial.print("AnalogPin: ");
 	Serial.print((int)pin);
-	Serial.println(" is ");
+	Serial.print(" Value: ");
+	Serial.print(value);
+	Serial.print(" Measurement: ");
+	Serial.print(measure);
+	Serial.print(" ");
+	Serial.println(units);
 }
