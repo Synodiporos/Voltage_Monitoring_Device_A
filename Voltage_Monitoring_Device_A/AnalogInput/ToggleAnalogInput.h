@@ -36,7 +36,7 @@ private:
 
 	IStateListener * _stateListener = 0;
 
-	void notifyPropertyChanged();
+	void notifyPropertyChanged(unsigned long old);
 	void notifyToggleStateChanged();
 };
 

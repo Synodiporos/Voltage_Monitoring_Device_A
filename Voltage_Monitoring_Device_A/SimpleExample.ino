@@ -1,25 +1,20 @@
-#include <AmazonIOTClient.h>
-#include "ESP8266AWSImplementations.h"
+#include "AnalogInput/AnalogInput.h"
+#include "NotificationSystem.h"
 
-Esp8266HttpClient httpClient;
-Esp8266DateTimeProvider dateTimeProvider;
+//AnalogMeasurement am = AnalogMeasurement(A0, 10,
+//		43.945, 0, "KV");
 
-AmazonIOTClient iotClient;
-ActionError actionError;
-
-char *ssid="MySSID";
-char *password="MyPASS";
+//NotificationSystem ns = NotificationSystem();
 
 void setup() {
   Serial.begin(115200);
-  delay(10);
 
-  // Connect to WAP
-  Serial.print("Connecting to ");
+  Serial.print("Starting...");
 
+  //am.setPropertyListener(&ns);
 }
 
 void loop(){
-
+	//am.validate();
 }
 

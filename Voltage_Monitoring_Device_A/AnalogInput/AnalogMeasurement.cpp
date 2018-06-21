@@ -70,7 +70,3 @@ float AnalogMeasurement::getMeasurement(){
 	return getAnalogValue()*coef - offset;
 }
 
-void AnalogMeasurement::analogValueChanged(
-		unsigned short int analogValue, unsigned short int old){
-
-}

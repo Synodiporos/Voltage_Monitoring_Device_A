@@ -26,11 +26,10 @@ public:
 	float getOffset();
 	void setUnits(char* units);
 	char* getUnits();
-
+	float getMeasurement();
 	static int convert(float vref, float realMaxValue);
 
 protected:
-	float getMeasurement();
 	void analogValueChanged(
 			unsigned short int analogValue, unsigned short int old);
 

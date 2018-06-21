@@ -62,8 +62,8 @@ IStateListener* ToggleAnalogInput::getStateListener(){
 	return this->_stateListener;
 }
 
-void ToggleAnalogInput::notifyPropertyChanged(){
-	AnalogInput::notifyPropertyChanged();
+void ToggleAnalogInput::notifyPropertyChanged(unsigned long old){
+	AnalogInput::notifyPropertyChanged(old);
 	/*Serial.print("AnalogValue: ");
 	Serial.print(getAnalogeValue());
 	Serial.print(" Toggle: ");
